@@ -22,7 +22,7 @@ jobs:
         java-version: '17'
 
     - name: Build com Maven
-      run: mvn -B package --file pom.xml
-
+      run: mvn clean install
+#      run: mvn -B package --file pom.xml
     - name: Executar testes
       run: mvn test
