@@ -1,3 +1,5 @@
+// src/test/java/com/seunome/apidemo/UserControllerTest.java
+
 package com.seunome.apidemo;
 
 import com.seunome.apidemo.model.User;
@@ -8,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest
+@SpringBootTest(classes = ApiDemoApplication.class) // <- Aqui é o ponto-chave
 class UserControllerTest {
 
     @Autowired
